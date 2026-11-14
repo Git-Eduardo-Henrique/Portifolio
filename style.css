@@ -1,0 +1,9 @@
+/* Personalizações do header */
+.custom-header {
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 12px;
+    top: 10px;
+    z-index: 1000;
+}
+    

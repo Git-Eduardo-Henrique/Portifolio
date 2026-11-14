@@ -5,35 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portifolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="./src/images/modes/light_mode.png" alt="mdo" width="48" height="48" class="img-thumbnail">
-                </a>
-            </div>
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Sobre mim</a></li>
-                    <li><a href="#" class="nav-link px-2">Projetos</a></li>
-                    <li><a href="#" class="nav-link px-2">Contatos</a></li>
-                    <li><a href="#" class="nav-link px-2">Curriculo</a></li>
-                </ul>
-                <div class="col-md-3 text-end">
-                    <!-- language button -->
-                    <div class="dropdown text-end">
-                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
-                            <img src="./src/images/flags/brazil_flag.png" alt="mdo" width="48" height="32" class="rounded">
-                        </a>
-                        <ul class="dropdown-menu text-small show" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 34px);" data-popper-placement="bottom-start">
-                            <li><a class="dropdown-item" href="#">Português</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                        </ul>
-                    </div>
-                </div>
-        </header>
-    </div>
+        <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-light shadow fixed-top custom-header px-3">
+        <div class="container-fluid">
+
+        <!-- Botão modo escuro -->
+        <button class="btn btn-outline-secondary me-3">
+            🌑
+        </button>
+
+        <!-- Links centrais -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#sobre">Sobre mim</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#contatos">Contatos</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link link-info" href="src/resume/eduardo_henrique_curriculo.pdf" download>Currículo</a>
+            </li>
+            </ul>
+        </div>
+
+        <!-- Dropdown idioma -->
+        <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <img src="src/images/flags/brazil_flag.png" alt="Português" height="26px" width="38px"> 
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <a class="dropdown-item" href="#">
+                    <img src="src/images/flags/brazil_flag.png" height="18px" width="28px" alt="Português"> Português
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                    <img src="src/images/flags/usa_flag.png" height="18px" width="28px" alt="English"> English
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
